@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>MEMORY GAME</title>
+        <link rel="stylesheet" href="1 + 2 = 11 .css" />
+    </head>
+    <body>
+
+        <div class="controls-button">
+            <span class="main">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Start Game
+            </span>
+        </div>
+
+        <div class="container">
+            <div class="name">
+                Hello: <span style="text-transform: uppercase;"></span>
+            </div>
+            <div class="right-trials">
+                Right Trials: <span>0</span>
+            </div>
+            <div class="left">
+                Left: <span>10</span>
+            </div>
+            <div class="trials">
+                Wrong Trials: <span>0</span>
+            </div>
+        </div>
+
+        <div class="count-down">
+           Timer: <span></span>
+        </div>
+
+        <div class="memory-game">
+            <div class="game-block" data-carlogo="vw">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="images/vw.png" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="vw">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/vw.png" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="alfa">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/alfa.jpg" style="border-radius: 50%;"/>
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="alfa">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/alfa.jpg" style="border-radius: 50%;"/>
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="audi">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/audi.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="audi">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/audi.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="bmw">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/bmw.png" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="bmw">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/bmw.png" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="bugatti">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/bugatti.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="bugatti">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/bugatti.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="ferrari">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/ferrari.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="ferrari">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/ferrari.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="maserati">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/maserati.png" style="border-radius: 50%;" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="maserati">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/maserati.png" style="border-radius: 50%;" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="merceds">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/merceds.jpg" style="border-radius: 50%;"/>
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="merceds">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/merceds.jpg" style="border-radius: 50%;" />
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="porsche">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/porsche.jpg" style="border-radius: 25%;"/>
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="porsche">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/porsche.jpg" style="border-radius: 25%;"/>
+                </div>
+            </div>
+
+            <div class="game-block" data-carlogo="skoda">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/Skoda.png" style="border-radius: 50%;" />
+                </div>
+            </div>
+            <div class="game-block" data-carlogo="skoda">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="images/Skoda.png" style="border-radius: 50%;" />
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over" class="failed hide">
+            GAME OVER...!
+            <br> 
+            PLEASE TRY AGAIN
+        </div>
+        <div id="game-finish" class="winner hide">
+            WINNER...!
+            <br>
+            CONGRATULATIONS 
+        </div>
+
+        <audio id="fail" src="sounds/Bleep-SoundBible.com-1927126940.mp3" preload="auto"></audio>
+        <audio id="sucess" src="sounds/shooting_star-Mike_Koenig-1132888100.mp3" preload="auto"></audio>
+        <audio id="finish" src="sounds/Sad_Trombone-Joe_Lamb-665429450.mp3" preload="auto"></audio>
+        <audio id="sucesssed" src="sounds/5_Sec_Crowd_Cheer-Mike_Koenig-1562033255.mp3" preload="auto"></audio>
+         <script src="1 + 2 = 11 .js"></script>
+    </body>
+</html>
